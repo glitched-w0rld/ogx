@@ -154,9 +154,7 @@ jobs:
   preview:
     needs: compute-branch
     # Skip preview if workflow_dispatch provides sdk_install_url, or if PR is being closed
-    if: |
-      (github.event_name == 'workflow_dispatch' && inputs.sdk_install_url == '') ||
-      (github.event_name == 'pull_request_target' && github.event.action != 'closed')
+    if: false
     runs-on: ubuntu-latest
     permissions:
       contents: read
