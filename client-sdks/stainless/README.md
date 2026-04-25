@@ -9,3 +9,5 @@ These files go hand-in-hand. Both `openapi.yml` and `config.yml` are generated b
 
 - `openapi.yml` comes from the FastAPI-based generator.
 - `config.yml` is rendered from `scripts/openapi_generator/stainless_config/config_data.py` so the Stainless config stays in lock-step with the spec.
+
+This change is needed to cause the workflow to trigger.
